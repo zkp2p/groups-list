@@ -1,0 +1,217 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://zkp2p.github.io/groups-list/schema/group.schema.json",
+  "title": "ZKP2P Verified Group",
+  "description": "Metadata for one verified onchain address group",
+  "type": "object",
+  "required": [
+    "chainId",
+    "registryAddress",
+    "groupId",
+    "name",
+    "slug",
+    "description",
+    "curator",
+    "membership"
+  ],
+  "properties": {
+    "chainId": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Chain containing the group registry"
+    },
+    "registryAddress": {
+      "$ref": "#/definitions/Address"
+    },
+    "groupId": {
+      "type": "string",
+      "pattern": "^[1-9][0-9]*$",
+      "description": "Onchain uint256 group ID encoded as a decimal string"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "description": "Human-readable group name"
+    },
+    "slug": {
+      "$ref": "#/definitions/Slug"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500,
+      "description": "Plain-language explanation of the group"
+    },
+    "curator": {
+      "$ref": "#/definitions/Curator"
+    },
+    "membership": {
+      "$ref": "#/definitions/Membership"
+    },
+    "groupSet": {
+      "$ref": "#/definitions/GroupSet"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 30,
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "maxItems": 10,
+      "uniqueItems": true
+    },
+    "links": {
+      "$ref": "#/definitions/Links"
+    },
+    "logoURI": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "Address": {
+      "type": "string",
+      "pattern": "^0x[a-fA-F0-9]{40}$"
+    },
+    "Slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 1,
+      "maxLength": 50
+    },
+    "Links": {
+      "type": "object",
+      "properties": {
+        "website": {
+          "type": "string",
+          "format": "uri"
+        },
+        "docs": {
+          "type": "string",
+          "format": "uri"
+        },
+        "source": {
+          "type": "string",
+          "format": "uri"
+        },
+        "twitter": {
+          "type": "string",
+          "format": "uri"
+        },
+        "discord": {
+          "type": "string",
+          "format": "uri"
+        },
+        "telegram": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Curator": {
+      "type": "object",
+      "required": [
+        "address",
+        "name",
+        "slug"
+      ],
+      "properties": {
+        "address": {
+          "$ref": "#/definitions/Address"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "slug": {
+          "$ref": "#/definitions/Slug"
+        },
+        "links": {
+          "$ref": "#/definitions/Links"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Membership": {
+      "type": "object",
+      "required": [
+        "description",
+        "criteriaURI"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "criteriaURI": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sourceURI": {
+          "type": "string",
+          "format": "uri"
+        },
+        "resolverAddress": {
+          "$ref": "#/definitions/Address"
+        },
+        "refreshCadence": {
+          "type": "string",
+          "pattern": "^P(?!$).+$",
+          "description": "ISO 8601 duration, such as PT15M or P1D"
+        }
+      },
+      "additionalProperties": false
+    },
+    "GroupSet": {
+      "type": "object",
+      "required": [
+        "slug",
+        "name",
+        "membershipSemantics"
+      ],
+      "properties": {
+        "slug": {
+          "$ref": "#/definitions/Slug"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "membershipSemantics": {
+          "type": "string",
+          "enum": [
+            "independent",
+            "exact-tier",
+            "minimum-tier"
+          ]
+        },
+        "tier": {
+          "type": "object",
+          "required": [
+            "key",
+            "rank"
+          ],
+          "properties": {
+            "key": {
+              "$ref": "#/definitions/Slug"
+            },
+            "rank": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://zkp2p.github.io/groups-list/schema/groups-list.schema.json",
+  "title": "ZKP2P Groups List",
+  "description": "Generated aggregate of verified ZKP2P address groups",
+  "type": "object",
+  "required": [
+    "name",
+    "schemaVersion",
+    "generatedAt",
+    "commit",
+    "schema",
+    "groups"
+  ],
+  "properties": {
+    "name": {
+      "const": "ZKP2P Verified Groups"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "commit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "$ref": "https://zkp2p.github.io/groups-list/schema/group.schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

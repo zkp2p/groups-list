@@ -1,0 +1,28 @@
+{
+  "chainId": 8453,
+  "registryAddress": "0x1111111111111111111111111111111111111111",
+  "groupId": "123",
+  "name": "Example Trusted Takers",
+  "slug": "trusted-takers",
+  "description": "Takers who meet the curator's published participation requirements.",
+  "curator": {
+    "address": "0x2222222222222222222222222222222222222222",
+    "name": "Example Curator",
+    "slug": "example-curator",
+    "links": {
+      "website": "https://example.com"
+    }
+  },
+  "membership": {
+    "description": "Membership is reviewed weekly against the published criteria.",
+    "criteriaURI": "https://example.com/group-criteria",
+    "sourceURI": "https://github.com/example/example-curator",
+    "refreshCadence": "P7D"
+  },
+  "tags": [
+    "reputation"
+  ],
+  "links": {
+    "docs": "https://example.com/group-criteria"
+  }
+}
