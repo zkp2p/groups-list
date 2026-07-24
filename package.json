@@ -1,8 +1,8 @@
 {
-  "name": "@zkp2p/groups-list",
+  "name": "peer-groups-list",
   "version": "1.0.0",
   "private": true,
-  "description": "Verified metadata registry for ZKP2P address groups",
+  "description": "Verified metadata registry for Peer groups",
   "type": "module",
   "engines": {
     "node": ">=20"

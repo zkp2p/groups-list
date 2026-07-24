@@ -1,6 +1,6 @@
-# ZKP2P Groups List
+# Peer Groups List
 
-The public registry of verified address groups used by ZKP2P makers.
+The public registry of verified groups used by Peer makers.
 
 Groups are created and managed onchain. This repository adds the metadata that
 helps makers understand who operates a group, how membership is decided, and

@@ -30,7 +30,7 @@ const entries = await loadGroupEntries();
 const groups = entries.map((entry) => entry.group).sort(compareGroups);
 
 const list = {
-  name: "ZKP2P Verified Groups",
+  name: "Peer Groups List",
   schemaVersion,
   generatedAt: new Date().toISOString(),
   commit: process.env.GITHUB_SHA ?? "local",

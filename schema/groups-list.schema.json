@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://zkp2p.github.io/groups-list/schema/groups-list.schema.json",
-  "title": "ZKP2P Groups List",
-  "description": "Generated aggregate of verified ZKP2P address groups",
+  "title": "Peer Groups List",
+  "description": "Generated aggregate of verified Peer groups",
   "type": "object",
   "required": [
     "name",
@@ -14,7 +14,7 @@
   ],
   "properties": {
     "name": {
-      "const": "ZKP2P Verified Groups"
+      "const": "Peer Groups List"
     },
     "schemaVersion": {
       "type": "string",

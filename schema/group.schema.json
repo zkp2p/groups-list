@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://zkp2p.github.io/groups-list/schema/group.schema.json",
-  "title": "ZKP2P Verified Group",
-  "description": "Metadata for one verified onchain address group",
+  "title": "Peer Group",
+  "description": "Metadata for one verified Peer group",
   "type": "object",
   "required": [
     "chainId",
