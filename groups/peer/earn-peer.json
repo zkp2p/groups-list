@@ -1,0 +1,41 @@
+{
+  "chainId": 8453,
+  "registryAddress": "0xe11044811237170c0fa8f0bfb38f5b6f07cf5dbf",
+  "groupId": "0xd75c75f345c8e5d4a9f48bc0cc458cf15adb0c4393469d6b10da1655c2c1c0f1",
+  "name": "Earn Peer",
+  "slug": "earn-peer",
+  "description": "Established participants in the broadest frozen Earn-volume cohort.",
+  "curator": {
+    "address": "0x84e113087c97cd80ea9d78983d4b8ff61eca1929",
+    "name": "Peer",
+    "slug": "peer",
+    "links": {
+      "website": "https://peer.xyz/",
+      "source": "https://github.com/zkp2p/peer-curator"
+    }
+  },
+  "membership": {
+    "description": "Wallets with at least $1,000 in frozen Earn-qualified volume, subject to the published lock-score demotion and blocked-wallet rules. Higher tiers are included because membership is cumulative.",
+    "criteriaURI": "https://github.com/zkp2p/peer-curator#high-level-tiers",
+    "sourceURI": "https://github.com/zkp2p/peer-curator",
+    "refreshCadence": "PT12H"
+  },
+  "groupSet": {
+    "slug": "current-earn",
+    "name": "Current Earn",
+    "membershipSemantics": "minimum-tier",
+    "tier": {
+      "key": "peer",
+      "rank": 1
+    }
+  },
+  "tags": [
+    "peer",
+    "reputation",
+    "earn"
+  ],
+  "links": {
+    "docs": "https://github.com/zkp2p/peer-curator#high-level-tiers",
+    "source": "https://github.com/zkp2p/peer-curator"
+  }
+}

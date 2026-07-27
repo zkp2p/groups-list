@@ -23,7 +23,8 @@ groups/<curator-slug>/<group-slug>.json
 The individual files are the source of truth. This lets different curators
 open PRs at the same time without editing one shared JSON file.
 
-After changes reach `main`, GitHub Actions builds and publishes one aggregated
+After changes reach `main` or the staging release branch
+`releases/staging`, GitHub Actions builds and publishes one aggregated
 `groups-list.json` for applications to consume. Do not commit generated files.
 
 ## What a verified listing means
@@ -108,7 +109,7 @@ updated or removed.
 {
   "chainId": 8453,
   "registryAddress": "0x1111111111111111111111111111111111111111",
-  "groupId": "123",
+  "groupId": "0x0000000000000000000000000000000000000000000000000000000000000123",
   "name": "Example Trusted Takers",
   "slug": "trusted-takers",
   "description": "Takers who meet the curator's published participation requirements.",
@@ -154,6 +155,9 @@ npm run build
 - Patch: clarification or validation tightening.
 
 Adding or updating a group does not require a schema version change.
+
+The current schema version is `2.0.0`. Version 2 uses canonical `bytes32`
+group IDs encoded as `0x` followed by 64 hexadecimal characters.
 
 ## License
 
