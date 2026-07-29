@@ -1,0 +1,42 @@
+{
+  "chainId": 8453,
+  "registryAddress": "0x39f80118f9eb619135f116171b6cb91d372c5af2",
+  "groupId": "0x2fb4591ba225813e272f6c51e6e64edcfa21fff18ea2619726363a4f785c2c09",
+  "name": "Peer",
+  "slug": "peer",
+  "description": "Established takers in the broadest historical-volume cohort.",
+  "curator": {
+    "address": "0x84e113087c97cd80ea9d78983d4b8ff61eca1929",
+    "name": "Peer",
+    "slug": "peer",
+    "links": {
+      "website": "https://peer.xyz/",
+      "source": "https://github.com/zkp2p/peer-curator"
+    }
+  },
+  "membership": {
+    "description": "Wallets with at least $500 in historical fulfilled taker volume, subject to the published lock-score demotion and blocked-wallet rules. Higher tiers are included because membership is cumulative.",
+    "criteriaURI": "https://github.com/zkp2p/peer-curator#high-level-tiers",
+    "sourceURI": "https://github.com/zkp2p/peer-curator",
+    "refreshCadence": "PT12H"
+  },
+  "groupSet": {
+    "slug": "historical-taker",
+    "name": "Historical Taker",
+    "membershipSemantics": "minimum-tier",
+    "tier": {
+      "key": "peer",
+      "rank": 1
+    }
+  },
+  "tags": [
+    "peer",
+    "reputation",
+    "taker",
+    "historical"
+  ],
+  "links": {
+    "docs": "https://github.com/zkp2p/peer-curator#high-level-tiers",
+    "source": "https://github.com/zkp2p/peer-curator"
+  }
+}

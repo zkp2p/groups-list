@@ -108,7 +108,7 @@ updated or removed.
 {
   "chainId": 8453,
   "registryAddress": "0x1111111111111111111111111111111111111111",
-  "groupId": "123",
+  "groupId": "0x0000000000000000000000000000000000000000000000000000000000000123",
   "name": "Example Trusted Takers",
   "slug": "trusted-takers",
   "description": "Takers who meet the curator's published participation requirements.",
@@ -154,6 +154,9 @@ npm run build
 - Patch: clarification or validation tightening.
 
 Adding or updating a group does not require a schema version change.
+
+The current schema version is `2.0.0`. Version 2 uses canonical `bytes32`
+group IDs encoded as `0x` followed by 64 hexadecimal characters.
 
 ## License
 

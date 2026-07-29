@@ -15,7 +15,7 @@ import {
   rootDirectory,
 } from "./lib.mjs";
 
-const schemaVersion = "1.0.0";
+const schemaVersion = "2.0.0";
 const publicBaseUrl = "https://zkp2p.github.io/groups-list";
 const distributionDirectory = path.join(rootDirectory, "dist");
 const distributionSchemaDirectory = path.join(distributionDirectory, "schema");

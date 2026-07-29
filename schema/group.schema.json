@@ -25,8 +25,8 @@
     },
     "groupId": {
       "type": "string",
-      "pattern": "^[1-9][0-9]*$",
-      "description": "Onchain uint256 group ID encoded as a decimal string"
+      "pattern": "^0x[a-fA-F0-9]{64}$",
+      "description": "Onchain bytes32 group ID encoded as 0x followed by 64 hexadecimal characters"
     },
     "name": {
       "type": "string",
