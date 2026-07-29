@@ -1,7 +1,7 @@
 {
   "chainId": 8453,
   "registryAddress": "0x1111111111111111111111111111111111111111",
-  "groupId": "123",
+  "groupId": "0x0000000000000000000000000000000000000000000000000000000000000123",
   "name": "Example Trusted Takers",
   "slug": "trusted-takers",
   "description": "Takers who meet the curator's published participation requirements.",
