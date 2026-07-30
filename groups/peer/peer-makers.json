@@ -2,8 +2,8 @@
   "chainId": 8453,
   "registryAddress": "0x39f80118f9eb619135f116171b6cb91d372c5af2",
   "groupId": "0xdf1c64c54745aa1ce00642a5874f97e3183bf5e993c1f559d0a37a4df0b803c7",
-  "name": "Top Chargeback Merchants",
-  "slug": "top-chargeback-merchants",
+  "name": "Peer Makers",
+  "slug": "peer-makers",
   "description": "One-time cohort of makers with at least $10,000 in all-time non-manual-release PayPal, Venmo, or Cash App volume.",
   "curator": {
     "address": "0x84e113087c97cd80ea9d78983d4b8ff61eca1929",
@@ -16,7 +16,7 @@
   },
   "membership": {
     "description": "Maker wallets with at least $10,000 in fulfilled volume summed across PayPal, Venmo, and Cash App for all available history, excluding manual releases. There is no date cutoff and this initialization cohort is not periodically refreshed.",
-    "criteriaURI": "https://github.com/zkp2p/peer-curator#top-chargeback-merchants",
+    "criteriaURI": "https://github.com/zkp2p/peer-curator#peer-makers",
     "sourceURI": "https://github.com/zkp2p/peer-curator"
   },
   "tags": [
@@ -28,7 +28,7 @@
     "one-time"
   ],
   "links": {
-    "docs": "https://github.com/zkp2p/peer-curator#top-chargeback-merchants",
+    "docs": "https://github.com/zkp2p/peer-curator#peer-makers",
     "source": "https://github.com/zkp2p/peer-curator"
   }
 }
