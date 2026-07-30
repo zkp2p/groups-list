@@ -1,10 +1,10 @@
 {
   "chainId": 8453,
   "registryAddress": "0x39f80118f9eb619135f116171b6cb91d372c5af2",
-  "groupId": "0x2fb4591ba225813e272f6c51e6e64edcfa21fff18ea2619726363a4f785c2c09",
+  "groupId": "0xd75c75f345c8e5d4a9f48bc0cc458cf15adb0c4393469d6b10da1655c2c1c0f1",
   "name": "Peer",
   "slug": "peer",
-  "description": "Established takers in the broadest historical-volume cohort.",
+  "description": "Takers with at least $500 of fulfilled PayPal, Venmo, or Cash App volume.",
   "curator": {
     "address": "0x84e113087c97cd80ea9d78983d4b8ff61eca1929",
     "name": "Peer",
@@ -15,7 +15,7 @@
     }
   },
   "membership": {
-    "description": "Wallets with at least $500 in historical fulfilled taker volume, subject to the published lock-score demotion and blocked-wallet rules. Higher tiers are included because membership is cumulative.",
+    "description": "Wallets with at least $500 in fulfilled taker volume summed only across PayPal, Venmo, and Cash App, excluding blocked wallets. Higher tiers are included because membership is cumulative.",
     "criteriaURI": "https://github.com/zkp2p/peer-curator#high-level-tiers",
     "sourceURI": "https://github.com/zkp2p/peer-curator",
     "refreshCadence": "PT12H"
