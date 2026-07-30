@@ -1,0 +1,29 @@
+{
+  "chainId": 8453,
+  "registryAddress": "0x54ff7788cb42b46fe2f016a65fd0f654bb9bcf3d",
+  "groupId": "0xc82c20c00033046a2f017b65532d7148a337282f17c73296663a530e49ba00f7",
+  "name": "Peer Pay (Staging)",
+  "slug": "peer-pay-staging",
+  "description": "Staging wallet addresses of live Peer Pay merchants, curated by the Peer Pay team for Peer.",
+  "curator": {
+    "address": "0x90c0b97aec997b5bce93f290d646b3e3223dfe6c",
+    "name": "Peer Pay",
+    "slug": "peer-pay",
+    "links": {
+      "website": "https://pay.peer.xyz",
+      "docs": "https://docs.pay.peer.xyz/"
+    }
+  },
+  "membership": {
+    "description": "Staging Peer Pay merchants, managed and curated by Peer Pay.",
+    "criteriaURI": "https://docs.pay.peer.xyz/"
+  },
+  "tags": [
+    "peer-pay",
+    "merchant",
+    "staging"
+  ],
+  "links": {
+    "docs": "https://docs.pay.peer.xyz/"
+  }
+}
