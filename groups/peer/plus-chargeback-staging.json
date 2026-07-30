@@ -1,0 +1,44 @@
+{
+  "chainId": 8453,
+  "registryAddress": "0x54Ff7788Cb42B46FE2F016a65Fd0f654Bb9BcF3D",
+  "groupId": "0xf6133c227eab8ae7da1ee143945bf7f31204394f3ba801dc9691f8af6ca8efa5",
+  "name": "Plus Chargebackable Volume (Staging)",
+  "slug": "plus-chargeback-staging",
+  "description": "Staging cohort for takers with at least $2,000 of fulfilled PayPal, Venmo, or Cash App volume.",
+  "curator": {
+    "address": "0x84e113087c97cd80ea9d78983d4b8ff61eca1929",
+    "name": "Peer",
+    "slug": "peer",
+    "links": {
+      "website": "https://peer.xyz/",
+      "source": "https://github.com/zkp2p/peer-curator"
+    }
+  },
+  "membership": {
+    "description": "Wallets with at least $2,000 in fulfilled taker volume summed only across PayPal, Venmo, and Cash App, excluding blocked wallets. Members are also included in Peer because membership is cumulative.",
+    "criteriaURI": "https://github.com/zkp2p/peer-curator#high-level-tiers",
+    "sourceURI": "https://github.com/zkp2p/peer-curator",
+    "refreshCadence": "PT12H"
+  },
+  "groupSet": {
+    "slug": "historical-taker-chargeback-staging",
+    "name": "Historical Taker Chargeback (Staging)",
+    "membershipSemantics": "minimum-tier",
+    "tier": {
+      "key": "plus",
+      "rank": 2
+    }
+  },
+  "tags": [
+    "peer",
+    "reputation",
+    "taker",
+    "historical",
+    "chargebackable",
+    "staging"
+  ],
+  "links": {
+    "docs": "https://github.com/zkp2p/peer-curator#high-level-tiers",
+    "source": "https://github.com/zkp2p/peer-curator"
+  }
+}
