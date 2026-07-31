@@ -1,0 +1,28 @@
+{
+  "chainId": 8453,
+  "registryAddress": "0x39f80118f9eb619135f116171b6cb91d372c5af2",
+  "groupId": "0x174b8a29536721a3eae290bfd55651b85a53fc334b971d993fa93ed8dde15e48",
+  "name": "Peer Pay",
+  "slug": "peer-pay",
+  "description": "Wallet addresses of live Peer Pay merchants, curated by the Peer Pay team for Peer.",
+  "curator": {
+    "address": "0x90c0b97aec997b5bce93f290d646b3e3223dfe6c",
+    "name": "Peer Pay",
+    "slug": "peer-pay",
+    "links": {
+      "website": "https://pay.peer.xyz",
+      "docs": "https://docs.pay.peer.xyz/"
+    }
+  },
+  "membership": {
+    "description": "Peer Pay merchants, managed and curated by Peer Pay.",
+    "criteriaURI": "https://docs.pay.peer.xyz/"
+  },
+  "tags": [
+    "peer-pay",
+    "merchant"
+  ],
+  "links": {
+    "docs": "https://docs.pay.peer.xyz/"
+  }
+}
