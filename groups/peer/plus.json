@@ -1,7 +1,7 @@
 {
   "chainId": 8453,
   "registryAddress": "0x39f80118f9eb619135f116171b6cb91d372c5af2",
-  "groupId": "0x76d8468179105f4ec9ba8f553823f44dcde6eeb997ba5b70da09849effc0375e",
+  "groupId": "0xb8747401b308d4891385620071b5916e9c61284f25c4611541c529703de5babf",
   "name": "Plus",
   "slug": "plus",
   "description": "Takers with at least $2,000 of fulfilled PayPal, Venmo, or Cash App volume.",

@@ -1,7 +1,7 @@
 {
   "chainId": 8453,
   "registryAddress": "0x39f80118f9eb619135f116171b6cb91d372c5af2",
-  "groupId": "0xe2ada1e143bc3a45398381b4b5bbb9e7ed6ccba40225168f32e9702e0c4e8260",
+  "groupId": "0xf030f72e772f954059ca28f94974088aaf6ba37bb1f264df48843a3d0c221dc3",
   "name": "Pro",
   "slug": "pro",
   "description": "Takers with at least $10,000 of fulfilled PayPal, Venmo, or Cash App volume.",
